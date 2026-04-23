@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cobra.io</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HOME MENU -->
+<div id="menu">
+
+    <div id="topBar">
+        <div id="leftTop">
+            <input id="username" placeholder="Enter Name">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="rightTop">
+            <div id="coinsDisplay">Coins: 0</div>
+        </div>
+    </div>
+
+    <h1>COBRA.IO</h1>
+    <p id="subtitle">Real Snake Battle Arena</p>
+
+    <div id="mainButtons">
+        <button onclick="startGame()">PLAY</button>
+        <button onclick="start1v1()">1V1</button>
+        <button onclick="openShop()">SHOP</button>
+        <button onclick="openSettings()">SETTINGS</button>
+    </div>
+
+    <div id="bottomLeft">
+        <button onclick="showCodesInfo()">How To Get Codes</button>
+    </div>
+
+    <div id="bottomRight">
+        <button onclick="showContact()">Contact Me</button>
+    </div>
+
+    <p id="credit">Aadhavan Singh</p>
+</div>
+
+<!-- SHOP -->
+<div id="shop">
+    <h2>SKIN SHOP</h2>
+    <div id="skins"></div>
+    <button onclick="closeShop()">BACK</button>
+</div>
+
+<!-- GAME -->
+<canvas id="game" width="900" height="550"></canvas>
+
+<script src="game.js"></script>
+
+</body>
+</html>

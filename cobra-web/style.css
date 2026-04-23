@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:radial-gradient(circle at center,#0b1020,#000000 70%);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:hidden;
+}
+
+/* MENU */
+#menu{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    text-align:center;
+}
+
+/* TOP BAR */
+#topBar{
+    position:absolute;
+    top:15px;
+    left:15px;
+    right:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#username{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    width:180px;
+}
+
+#coinsDisplay{
+    font-size:20px;
+    color:#ffd700;
+    font-weight:bold;
+}
+
+button{
+    padding:10px 18px;
+    margin:6px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    background:#00ff99;
+    color:black;
+    transition:0.2s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    background:#00ffaa;
+}
+
+/* TITLE */
+h1{
+    padding-top:120px;
+    font-size:80px;
+    color:#00ff99;
+    text-shadow:
+        0 0 15px #00ff99,
+        0 0 35px #00ff99;
+}
+
+#subtitle{
+    margin-top:10px;
+    font-size:22px;
+    color:#cccccc;
+}
+
+/* MAIN BUTTONS */
+#mainButtons{
+    margin-top:45px;
+}
+
+/* BOTTOM BUTTONS */
+#bottomLeft{
+    position:absolute;
+    left:20px;
+    bottom:40px;
+}
+
+#bottomRight{
+    position:absolute;
+    right:20px;
+    bottom:40px;
+}
+
+/* CREDIT */
+#credit{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    text-align:center;
+    color:orange;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* SHOP */
+#shop{
+    display:none;
+    width:100vw;
+    height:100vh;
+    text-align:center;
+    padding-top:50px;
+}
+
+#shop h2{
+    font-size:55px;
+    color:#00ff99;
+    margin-bottom:30px;
+}
+
+#skins{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.skinCard{
+    width:170px;
+    background:#111827;
+    border:2px solid #00ff99;
+    border-radius:16px;
+    padding:15px;
+}
+
+.skinPreview{
+    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:50%;
+    margin-bottom:12px;
+}
+
+/* GAME */
+#game{
+    display:none;
+    margin:auto;
+    margin-top:15px;
+    border:2px solid #00ff99;
+    box-shadow:0 0 25px #00ff99;
+    background:black;
+}
